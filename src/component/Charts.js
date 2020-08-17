@@ -48,7 +48,7 @@ async componentDidMount() {
       data: [fatality,recovery,activeCases],
       backgroundColor: [
       '#3e517a',
-      '#B7B0EA',
+      '#a5b7d9',
       '#CE88B1'      
     ],
   }]

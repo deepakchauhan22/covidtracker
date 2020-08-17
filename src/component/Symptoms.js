@@ -15,7 +15,7 @@ class Prevention extends Component{
     render(){
         return <>
   <div className="abhinay">
-              <Abhinay />
+            
              </div>
   <div class="flex-container">
            

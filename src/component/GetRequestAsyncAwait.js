@@ -114,7 +114,7 @@ class GetRequestAsyncAwait extends React.Component {
                             <table id="customers">
                             <thead>
                                     <tr>
-                                        <th>States/Union Territories</th>
+                                        <th>States/UT</th>
                                         <th>Confirmed</th>
                                         <th>Active</th>
                                         <th>Recovered</th>

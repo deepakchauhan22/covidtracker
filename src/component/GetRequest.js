@@ -1,13 +1,14 @@
 import React from 'react';
 import covidred from '../covid.svg';
-import covidbll from '../covidbll.svg';
+import covidbll from '../coviddeath.svg';
 import Footer from '../component/Footer'; 
 import { GetRequestAsyncAwait }  from '../component/GetRequestAsyncAwait';
-import covidgreen from '../covidgreen.svg';
-import covidgg from '../covidgg.svg';
+import covidgreen from '../covidactive.svg';
+import covidgg from '../covidrecover.svg';
 import 'font-awesome/css/font-awesome.min.css';
 import { Global } from './Global';
 import {GetRequestHooks} from './Global';
+import protection from '../protection.png';
 
 class GetRequest extends React.Component {
     constructor(props) {
@@ -65,45 +66,35 @@ class GetRequest extends React.Component {
         return (
            
             <div className="Hero-Block">
-                
+                <div className="introduction"> 
+              
+                    <div className="intro-text"> 
+                    <h1>Covid-19 Live tracker</h1>
+                    <p>A Location-wise Covid-19 Cases Tracker. <br/>
+                        Please Allow Location Access To Know Your City Details.
+                    </p>
+                    <span>India <i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                    </div>
+                    <div className="intro-img">
+                    <div className = "Hero-Image">
+                    <img src={protection} width = "50%"  alt="covid"/>
+                    
+             </div>
+                    </div>
+                </div>
                     <GetRequestHooks  tested={totalTested} daily = {newConfirmed}/>
-                    {/* <div className="icon-bar">
-                        <a href="#" className="facebook notifications" id="notificationLink"><i className="fa fa-bell" aria-hidden="true"></i><span id="notification_count">4</span>
-                        <div className="updatesnot" id="notificationContainer"> 
-                               
-                                    <div className="update-contentnot">
-                                    <div id="notificationTitle">News Updates</div>
-                                       
-                                    <div id="notificationsBody" class="notifications">
-                                    <ul>
-                                        <li><a href="#"><i className="fa fa-globe"  aria-hidden="true"></i>Global confirmed cases: 18,295,434; total deaths: 694,233; total recovered: 10,926,704</a></li>
-                                        <li><a href="#"><i className="fa fa-user-md" aria-hidden="true"></i>Total Number of Tests Done in India: {totalTested}</a></li>
-                                        <li><a href="#"><i className="fa fa-asterisk" aria-hidden="true"></i>2284 new cases and 1471 recoveries in Your City</a></li>
-                                        <li><a href="#"><i className="fa fa-info-circle" aria-hidden="true"></i>Guidelines on Preventive Measures to Contain Spread of COVID-19</a></li>
-                                        </ul>
-                                    </div>
-                                    </div>
-                                </div> 
-                        
-                        </a> 
-                        <a href="#" className="twitter"><i className="fa fa-language" aria-hidden="true"></i></a> 
-                        <a href="#" className="google"> <label className="switch">
-                            <input type="checkbox"/>
-                            <span className="slider round"></span>
-                            </label>
-                        </a>                     
-                    </div> */}
+                  
                  <div className="Main-Content">
                             <div className="bottom-animation">
                                             <ul className="borda" >
                                                 <li id="anime5">
-                                                    <img src={covidred} width = "30%"  alt="covid"/>
+                                                    <img src={covidred} width = "20%"  alt="covid"/>
                                                     <span>Total Cases</span>
                                                     <p className="Developer-box"> {confirmComma}</p>
-                                                    <p className="new-box"> <i className="fa fa-plus" aria-hidden="true"></i> {newConfirmed} (new cases)</p>
+                                                    <p className="new-box"> <i class="fa fa-arrow-circle-up" aria-hidden="true"></i> {newConfirmed} (new cases)</p>
                                                 </li>
                                                 <li id="anime6" >
-                                                    <img src={covidgreen} width = "25%" alt="covid"/>
+                                                    <img src={covidgreen} width = "20%" alt="covid"/>
                                                     <span>Active</span> 
                                                     <p className="Developer-box">
                                                     {activeComma}
@@ -113,16 +104,16 @@ class GetRequest extends React.Component {
                                                 
                                                 </li>
                                                 <li id="anime7" >
-                                                    <img src={covidgg} width = "30%" alt="covid"/>
+                                                    <img src={covidgg} width = "20%" alt="covid"/>
                                                     <span>Recovered</span>
                                                     <p className="Developer-box">{recoverComma} </p>
-                                                    <p className="new-box"> <i className="fa fa-arrow-up" aria-hidden="true"></i> {newRecovered}(recoveries)</p>
+                                                    <p className="new-box"> <i class="fa fa-arrow-circle-up" aria-hidden="true"></i> {newRecovered}(recoveries)</p>
                                                 </li>
                                                 <li id="anime8" >
-                                                    <img src={covidbll} width = "26%"  alt="covid"/>
+                                                    <img src={covidbll} width = "20%"  alt="covid"/>
                                                     <span>Deaths</span>
                                                     <p className="Developer-box">{deathComma}</p> 
-                                                    <p className="new-box"> <i className="fa fa-plus" aria-hidden="true"></i> {newDeath} (new deaths)</p>
+                                                    <p className="new-box"> <i class="fa fa-arrow-circle-up" aria-hidden="true"></i> {newDeath} (new deaths)</p>
                                                 </li>
                                                 
                                             </ul>

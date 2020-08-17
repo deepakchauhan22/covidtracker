@@ -25,21 +25,24 @@ class Header extends Component{
                         <i className="fa fa-bars"></i>
                     </a> */}
                  
-                 <NavLink className="active" to= "/home">
+                   <NavLink className="active" to= "/home">
                     <span ></span> Colist.
                    </NavLink>
-                   <NavLink className="nav-link" to= "/prevention">
-                    <span className="fa fa-medkit i"></span> Prevention
-                   </NavLink>
-                   <NavLink className="nav-link" to= "/symptoms">
-                    <span className="fa fa-heartbeat i"></span> Symptoms 
-                   </NavLink>
-                   <NavLink  to= "/about">
-                    <span className="fa fa-asterisk i"></span> About
-                   </NavLink>
-                 
+                        <NavLink  to= "/about">
+                        <span className="fa fa-asterisk i"></span> About
+                        </NavLink>
+                        <NavLink className="nav-link" to= "/symptoms">
+                        <span className="fa fa-heartbeat i"></span> Symptoms 
+                        </NavLink>
+                        <NavLink className="nav-link" to= "/prevention">
+                        <span className="fa fa-medkit i"></span> Prevention
+                        </NavLink>
+                      
+              
+                   
                   
          </div>
+        
         </>
      
 

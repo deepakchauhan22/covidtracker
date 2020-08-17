@@ -20,7 +20,7 @@ class Main extends React.Component {
             <div className="wrapper">
                 
                 <Header />
-               
+        
                 <Switch> 
 
                 <Route path="/home" component={GetRequest} />
@@ -29,7 +29,8 @@ class Main extends React.Component {
                 <Route path="/prevention" component = {Prevention} />
 
                    <Redirect to = "/home" />
-                </Switch>         
+                </Switch>    
+                
                 {/* <GetRequestAsyncAwait />  
                 <Footer />       */}
                 {/* <GetRequestAsyncAwait />
