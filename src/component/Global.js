@@ -36,8 +36,8 @@ function GetRequestHooks(props) {
                                     <div className="updatesnot" id="notificationContainer"> 
                             
                                                     <div className="update-contentnot">
-                                                        <div id="notificationTitle">News Updates</div>
-                                                        
+                                                        <div id="notificationTitle">News Updates    <span> <i class="fa fa-times" aria-hidden="true"></i></span></div>
+                                                     
                                                         <div id="notificationsBody" class="notifications">
                                                         <ul>
                                                         {

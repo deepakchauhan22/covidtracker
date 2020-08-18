@@ -61,15 +61,13 @@ class Prevention extends Component{
                             
                               </ul>
 
-                              {/* <li><a href="#"><i class="fa fa-check-circle" aria-hidden="true"></i>Maintain Distance</a></li>
-                            <li><a href="#"><i class="fa fa-check-circle" aria-hidden="true"></i>Cover Your Face</a></li> */}
-                         
+                                                   
                     </div>
                     <div className="prevent-img"> 
                            
-                            <img src={cough} width = "20%"  alt="Icons"/>
-                            <img src={fever} width = "16%" alt="Icons"/>
-                            <img src={tired} width = "18%" alt="Icons"/>
+                            <img src={cough} width = "30%"  alt="Icons"/>
+                            <img src={fever} width = "25%" alt="Icons"/>
+                            <img src={tired} width = "30%" alt="Icons"/>
                             
                     </div>  
                     <h2 className="less-com">Less Common</h2>
@@ -85,8 +83,7 @@ class Prevention extends Component{
                            <li><a href="#"><i class="fa fa-certificate" aria-hidden="true"></i>Loss of taste or smell</a></li>
                              </ul>
 
-                             {/* <li><a href="#"><i class="fa fa-check-circle" aria-hidden="true"></i>Maintain Distance</a></li>
-                           <li><a href="#"><i class="fa fa-check-circle" aria-hidden="true"></i>Cover Your Face</a></li> */}
+                            
                         
                    </div>
                    <div className="prevent-img"> 
@@ -106,27 +103,6 @@ class Prevention extends Component{
 
                        </div>
                         
-                        {/* <div class="list-type4">
-                        <h4> Most common symptoms:</h4>
-                            <ol>
-                            <li><a href="#">Fever</a></li>
-                            <li><a href="#">Dry- cough</a></li>
-                            <li><a href="#">Tiredness</a></li>
-                            </ol>
-                    
-                        <h4> Less common symptoms:</h4>
-
-                        <ol>
-                            <li><a href="#">Aches and Pains</a></li>
-                            <li><a href="#">Sore throat</a></li>
-                            <li><a href="#">diarrhoea</a></li>
-                            <li><a href="#">headache</a></li>
-                            <li><a href="#">Conjuctivites</a></li>
-                            <li><a href="#">Sore throat</a></li>
-                            <li><a href="#">loss of taste or smell</a></li>
-                        </ol> 
-
-                        </div> */}
                     
                     </div>
          </div>

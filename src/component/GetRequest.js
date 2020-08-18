@@ -91,7 +91,7 @@ class GetRequest extends React.Component {
                                                     <img src={covidred} width = "20%"  alt="covid"/>
                                                     <span>Total Cases</span>
                                                     <p className="Developer-box"> {confirmComma}</p>
-                                                    <p className="new-box"> <i class="fa fa-arrow-circle-up" aria-hidden="true"></i> {newConfirmed} (new cases)</p>
+                                                    <p className="new-box"> <i class="fa fa-arrow-circle-up" aria-hidden="true"></i> {newConfirmed} (New Cases)</p>
                                                 </li>
                                                 <li id="anime6" >
                                                     <img src={covidgreen} width = "20%" alt="covid"/>
@@ -107,13 +107,13 @@ class GetRequest extends React.Component {
                                                     <img src={covidgg} width = "20%" alt="covid"/>
                                                     <span>Recovered</span>
                                                     <p className="Developer-box">{recoverComma} </p>
-                                                    <p className="new-box"> <i class="fa fa-arrow-circle-up" aria-hidden="true"></i> {newRecovered}(recoveries)</p>
+                                                    <p className="new-box"> <i class="fa fa-arrow-circle-up" aria-hidden="true"></i> {newRecovered}(Recoveries)</p>
                                                 </li>
                                                 <li id="anime8" >
                                                     <img src={covidbll} width = "20%"  alt="covid"/>
                                                     <span>Deaths</span>
                                                     <p className="Developer-box">{deathComma}</p> 
-                                                    <p className="new-box"> <i class="fa fa-arrow-circle-up" aria-hidden="true"></i> {newDeath} (new deaths)</p>
+                                                    <p className="new-box"> <i class="fa fa-arrow-circle-up" aria-hidden="true"></i> {newDeath} (New Deaths)</p>
                                                 </li>
                                                 
                                             </ul>

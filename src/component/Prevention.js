@@ -58,9 +58,9 @@ class Prevention extends Component{
                             </ul>
                         </div>
                         <div className="prevent-img"> 
-                            <img src={handwash} width = "18%" alt="Icons"/>
-                            <img src={socialdistancing} width = "18%"  alt="Icons"/>
-                            <img src={mask} width = "18%" alt="Icons"/>
+                            <img src={handwash} width = "30%" alt="Icons"/>
+                            <img src={socialdistancing} width = "30%"  alt="Icons"/>
+                            <img src={mask} width = "30%" alt="Icons"/>
                         </div>  
 
                         <h3>Stay Home, Stay Alert</h3>
