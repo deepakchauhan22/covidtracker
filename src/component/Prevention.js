@@ -5,6 +5,7 @@ import socialdistancing from '../socialdist.svg';
 import mask from '../face-mask.svg';
 import protection from '../protection.png';
 import {GetRequestHooks} from './Global';
+import SideMenu from './SideMenu';
 
 class Prevention extends Component{
     constructor(props){
@@ -15,7 +16,7 @@ class Prevention extends Component{
         return <>
   
   <div class="flex-container">
- 
+         <SideMenu />
   {/* <div className="icon-bar">
                         <a href="#" className="facebook notifications" id="notificationLink"><i className="fa fa-bell" aria-hidden="true"></i><span id="notification_count">4</span>
                         <div className="updatesnot" id="notificationContainer"> 
@@ -47,7 +48,6 @@ class Prevention extends Component{
                         
                     <h2>Preventions</h2>
                    
-
                     <div class="Help-content">
                             <ul>
                             <li><a href="#"><i class="fa fa-check-circle" aria-hidden="true"></i>Wear Mask</a></li>

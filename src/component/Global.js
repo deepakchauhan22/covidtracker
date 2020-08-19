@@ -20,6 +20,7 @@ function GetRequestHooks(props) {
     
     return (
         console.log(cityName),
+        console.log(userStatecode),
 
 
     //   console.log(cityName),

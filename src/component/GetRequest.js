@@ -9,6 +9,7 @@ import 'font-awesome/css/font-awesome.min.css';
 import { Global } from './Global';
 import {GetRequestHooks} from './Global';
 import protection from '../protection.png';
+import SideMenu from './SideMenu';
 
 class GetRequest extends React.Component {
     constructor(props) {
@@ -66,22 +67,23 @@ class GetRequest extends React.Component {
         return (
            
             <div className="Hero-Block">
-                <div className="introduction"> 
+                  <div className="introduction"> 
               
-                    <div className="intro-text"> 
-                    <h1>Covid-19 Live tracker</h1>
-                    <p>A Location-wise Covid-19 Cases Tracker. <br/>
-                        Please Allow Location Access To Know Your City Details.
-                    </p>
-                    <span>India <i class="fa fa-caret-down" aria-hidden="true"></i></span>
-                    </div>
-                    <div className="intro-img">
-                    <div className = "Hero-Image">
-                    <img src={protection} width = "50%"  alt="covid"/>
-                    
-             </div>
-                    </div>
-                </div>
+                            <div className="intro-text"> 
+                                    <h1>Covid-19 Live tracker</h1>
+                                    <p>A Location-wise Covid-19 Cases Tracker. <br/>
+                                        Please Allow Location Access To Know Your City Details.
+                                    </p>
+                                    <span>India <i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                            </div>
+                                <div className="intro-img">
+                                    <div className = "Hero-Image">
+                                    <img src={protection} width = "50%"  alt="covid"/>
+                                    
+                                    </div>
+                                </div>
+                  </div>
+                    <SideMenu/>
                     <GetRequestHooks  tested={totalTested} daily = {newConfirmed}/>
                   
                  <div className="Main-Content">

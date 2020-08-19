@@ -32,9 +32,14 @@ class CityDetails extends React.Component {
 
     render() {
         const{CityDetailssss} = this.state;
-        const cityName =  window.cityName;
-        const userStatecode = window.userStatecode;
+        var cityName =  window.cityName;
+        var userStatecode = window.userStatecode;
         console.log(cityName);
+        if(cityName == 'New Delhi' && userStatecode=='D'){
+              cityName = 'Delhi';
+              userStatecode = "DL"
+
+        }
       
            return( 
             <div className="city-details"> 

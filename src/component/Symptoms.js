@@ -6,6 +6,7 @@ import fever from '../fever.svg';
 import protection from '../protection.png';
 import { GetRequest } from './GetRequest';
 import{Abhinay}from './Abhinay'
+import SideMenu from './SideMenu';
 
 class Prevention extends Component{
     constructor(props){
@@ -14,11 +15,9 @@ class Prevention extends Component{
 
     render(){
         return <>
-  <div className="abhinay">
-            
-             </div>
+ 
   <div class="flex-container">
-           
+  <SideMenu />
           {/* <div className="icon-bar">
                         <a href="#" className="facebook notifications" id="notificationLink"><i className="fa fa-bell" aria-hidden="true"></i><span id="notification_count">4</span>
                         <div className="updatesnot" id="notificationContainer"> 

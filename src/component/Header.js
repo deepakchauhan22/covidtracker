@@ -26,7 +26,7 @@ class Header extends Component{
                     </a> */}
                  
                    <NavLink className="active" to= "/home">
-                    <span ></span> Colist.
+                    <span ></span> Covidtrak.
                    </NavLink>
                         <NavLink  to= "/about">
                         <span className="fa fa-asterisk i"></span> About
@@ -37,9 +37,6 @@ class Header extends Component{
                         <NavLink className="nav-link" to= "/prevention">
                         <span className="fa fa-medkit i"></span> Prevention
                         </NavLink>
-                      
-              
-                   
                   
          </div>
         
