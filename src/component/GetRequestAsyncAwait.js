@@ -1,7 +1,7 @@
 import React ,{ useState } from 'react';
-import pandemic from '../pandemic.png';
-import homestay from '../homestay.png';
-import fight from '../fight.png';
+import pandemic from '../assets/img/pandemic.png';
+import homestay from '../assets/img/homestay.png';
+import fight from '../assets/img/fight.png';
 import Chart from '../component/Charts'; 
 import DynamicDoughnut from './Charts';
 import { configure } from '@testing-library/react';

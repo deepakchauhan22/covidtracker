@@ -1,14 +1,14 @@
 import React from 'react';
-import covidred from '../covid.svg';
-import covidbll from '../coviddeath.svg';
+import covidred from '../assets/img/covid.svg';
+import covidbll from '../assets/img/coviddeath.svg';
 import Footer from '../component/Footer'; 
 import { GetRequestAsyncAwait }  from '../component/GetRequestAsyncAwait';
-import covidgreen from '../covidactive.svg';
-import covidgg from '../covidrecover.svg';
+import covidgreen from '../assets/img/covidactive.svg';
+import covidgg from '../assets/img/covidrecover.svg';
 import 'font-awesome/css/font-awesome.min.css';
 import { Global } from './Global';
 import {GetRequestHooks} from './Global';
-import protection from '../protection.png';
+import protection from '../assets/img/protection.png';
 import SideMenu from './SideMenu';
 
 class GetRequest extends React.Component {

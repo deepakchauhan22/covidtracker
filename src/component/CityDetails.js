@@ -1,5 +1,5 @@
 import React from 'react';
-import pandemic from '../pandemic.png';
+import pandemic from '../assets/img/pandemic.png';
 
 class CityDetails extends React.Component {
     constructor(props) {

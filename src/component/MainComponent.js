@@ -6,7 +6,6 @@ import Header from './Header';
 import Footer from './Footer';
 import Symptoms from './Symptoms'
 import Prevention from './Prevention'
-import Table from './Table';
 import { GetRequestHooks }  from './GetRequestHooks';
 
 import { GetRequestAsyncAwait }  from './GetRequestAsyncAwait';
@@ -30,16 +29,6 @@ class Main extends React.Component {
 
                    <Redirect to = "/home" />
                 </Switch>    
-                
-                {/* <GetRequestAsyncAwait />  
-                <Footer />       */}
-                {/* <GetRequestAsyncAwait />
-                <GetRequestHooks />
-                <GetRequestErrorHandling />
-                <GetRequestSetHeaders /> 
-                <GetRequest/> 
-                <Footer /> */}
-                
               
             </div>
         );

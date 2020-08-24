@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import Hero from '../stay-safe.png';
+import Hero from '../assets/img/stay-safe.png';
 import SideMenu from './SideMenu';
+import {NavLink } from 'react-router-dom';
 
 class Facts extends Component{
     constructor(props){
@@ -9,11 +10,16 @@ class Facts extends Component{
 
     render(){
         return <>
-  
+        
   <div class="flex-container">
+        
   <SideMenu />
         <div class="markdown"> 
-
+                    <div className="breadcrumbs">                
+                                        <NavLink  to= "/home">
+                                        <span className="fa fa-home i"> </span> 
+                                        </NavLink>      
+                     </div>
                     <div class="item">
                         
                             {/* <h3>Spread Facts, Not fear</h3> */}

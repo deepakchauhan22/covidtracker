@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
-import Hero from '../hero.png';
-import tired from '../tired.png';
-import cough from '../cough.svg';
-import fever from '../fever.svg';
-import protection from '../protection.png';
+import Hero from '../assets/img/hero.png';
+import tired from '../assets/img/tired.png';
+import cough from '../assets/img/cough.svg';
+import fever from '../assets/img/fever.svg';
+import protection from '../assets/img/protection.png';
 import { GetRequest } from './GetRequest';
-import{Abhinay}from './Abhinay'
 import SideMenu from './SideMenu';
+
+import {NavLink } from 'react-router-dom';
 
 class Prevention extends Component{
     constructor(props){
@@ -17,36 +18,14 @@ class Prevention extends Component{
         return <>
  
   <div class="flex-container">
-  <SideMenu />
-          {/* <div className="icon-bar">
-                        <a href="#" className="facebook notifications" id="notificationLink"><i className="fa fa-bell" aria-hidden="true"></i><span id="notification_count">4</span>
-                        <div className="updatesnot" id="notificationContainer"> 
-                               
-                                    <div className="update-contentnot">
-                                    <div id="notificationTitle">News Updates</div>
-                                       
-                                    <div id="notificationsBody" class="notifications">
-                                    <ul>
-                                        <li><a href="#"><i className="fa fa-globe"  aria-hidden="true"></i>Global confirmed cases: 18,295,434; total deaths: 694,233; total recovered: 10,926,704</a></li>
-                                        <li><a href="#"><i className="fa fa-user-md" aria-hidden="true"></i>Total Number of Tests Done in India: </a></li>
-                                        <li><a href="#"><i className="fa fa-asterisk" aria-hidden="true"></i>2284 new cases and 1471 recoveries in Your City</a></li>
-                                        <li><a href="#"><i className="fa fa-info-circle" aria-hidden="true"></i>Guidelines on Preventive Measures to Contain Spread of COVID-19</a></li>
-                                        </ul>
-                                    </div>
-                                    </div>
-                                </div> 
-                        
-                        </a> 
-                        <a href="#" className="twitter"><i className="fa fa-language" aria-hidden="true"></i></a> 
-                        <a href="#" className="google"> <label className="switch">
-                            <input type="checkbox"/>
-                            <span className="slider round"></span>
-                            </label>
-                        </a>                     
-             </div> */}
-             
+  <SideMenu />            
           
         <div class="markdown"> 
+                    <div className="breadcrumbs">                
+                                        <NavLink  to= "/home">
+                                        <span className="fa fa-home i"> </span> 
+                                        </NavLink>      
+                     </div>
                     <div class="item">
                         
                     <h2>Common symptoms</h2>
@@ -85,6 +64,22 @@ class Prevention extends Component{
                             
                         
                    </div>
+                   <div>
+                        <h2>Serious Symptoms</h2>
+                            
+
+                            <div class="Help-content">
+                                    <ul>
+                                    <li><a href="#"><i class="fa fa-certificate" aria-hidden="true"></i>Difficulty breathing </a></li>
+                                    <li><a href="#"><i class="fa fa-certificate" aria-hidden="true"></i>Chest pain</a></li>
+                                    <li><a href="#"><i class="fa fa-certificate" aria-hidden="true"></i>Loss of speech</a></li>
+                                    <li><a href="#"><i class="fa fa-certificate" aria-hidden="true"></i>Shortness of breath</a></li>
+                                    <li><a href="#"><i class="fa fa-certificate" aria-hidden="true"></i>Loss of movement</a></li>
+                                    
+                                        </ul>
+                                    
+                            </div>
+                  </div>
                    <div className="prevent-img"> 
                           
                           
@@ -109,36 +104,6 @@ class Prevention extends Component{
              <div className = "Hero-Image-Sym">
                     <img src={Hero} width = "70%"  alt="covid"/>
              </div>
-             <div>
-             <h2>Serious Symptoms</h2>
-                   
-
-                   <div class="Help-content">
-                           <ul>
-                           <li><a href="#"><i class="fa fa-certificate" aria-hidden="true"></i>Difficulty breathing </a></li>
-                           <li><a href="#"><i class="fa fa-certificate" aria-hidden="true"></i>Chest pain</a></li>
-                           <li><a href="#"><i class="fa fa-certificate" aria-hidden="true"></i>Loss of speech</a></li>
-                           <li><a href="#"><i class="fa fa-certificate" aria-hidden="true"></i>Shortness of breath</a></li>
-                           <li><a href="#"><i class="fa fa-certificate" aria-hidden="true"></i>Loss of movement</a></li>
-                         
-                             </ul>
-
-                             {/* <li><a href="#"><i class="fa fa-check-circle" aria-hidden="true"></i>Maintain Distance</a></li>
-                           <li><a href="#"><i class="fa fa-check-circle" aria-hidden="true"></i>Cover Your Face</a></li> */}
-                        
-                   </div>
-             </div>
-             {/* <div  class="list-type4 ">  
-                <div class="list-serious">
-                    <h4> Serious symptoms:</h4>
-
-                            <ol>
-                                <li><a href="#">Difficulty breathing or shortness of breath</a></li>
-                                <li><a href="#">Chest pain or pressure</a></li>
-                                <li><a href="#">loss of speech or movement</a></li>
-                            </ol>
-                 </div>         
-           </div> */}
                  
          </div>
   </div>
