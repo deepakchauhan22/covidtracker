@@ -71,7 +71,7 @@ class GetRequest extends React.Component {
               
                             <div className="intro-text"> 
                                     <h1>Covid-19 Live tracker</h1>
-                                    <p>A Location-wise Covid-19 Cases Tracker. <br/>
+                                    <p>A Location-wise Corona Cases Tracker. <br/>
                                         Please Allow Location Access To Know Your City Details.
                                     </p>
                                     <span>India <i class="fa fa-caret-down" aria-hidden="true"></i></span>
@@ -83,6 +83,7 @@ class GetRequest extends React.Component {
                                     </div>
                                 </div>
                   </div>
+          
                     <SideMenu/>
                     <GetRequestHooks  tested={totalTested} daily = {newConfirmed}/>
                   
@@ -123,7 +124,7 @@ class GetRequest extends React.Component {
                 </div>
                           
                 <GetRequestAsyncAwait />            
-                <Footer />
+               
           </div>
             
         );

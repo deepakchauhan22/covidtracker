@@ -29,7 +29,7 @@ class Main extends React.Component {
 
                    <Redirect to = "/home" />
                 </Switch>    
-              
+                <Footer />
             </div>
         );
     }

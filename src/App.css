@@ -846,6 +846,7 @@ code{
 
 
   .footer {
+    margin-top: 5px;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -982,24 +983,34 @@ code{
       padding: 35px;
     }
   
+    /* margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #819bca;
+    padding: 16px;
+    width: 180px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    outline: none; */
+
     .more-faqs {
       display: inline-block;
-      background-color: #fff;
+      background: #819bca;
       color: #000;
       text-align: center;
-      font-size: 20px;
+      font-size: 15px;
       font-weight: 600;
       transition: all 0.5s;
       cursor: pointer;
-      margin: 0px;
+      margin: 10px;
       border-style: solid;
       border: none;
       border-width: 1px;
-      padding: 5px;
+      padding: 10px;
       box-sizing: border-box;
       border-radius: 5px;
-      width: 140px;
-      height: 40px;
+      
     
     }
     
@@ -1033,9 +1044,8 @@ code{
 
     .Morefaq{
     
-      position: absolute;
-      bottom: 30px;
-      right: 50px;
+      position: relative;
+      
     }
   
 
@@ -1079,7 +1089,7 @@ code{
     top: 30px;
     margin-left: 10px;
     width: 400px;
-    height: 300px;
+    height: 230px;
     z-index: 1!important;
    
     }
@@ -1426,6 +1436,7 @@ padding-top: 35px;
    padding-bottom: 5px;
 }
 .footer{
+  
   padding: 15px 0px 5px 0px;
 }
 .footer-bar .fa {
@@ -1453,28 +1464,25 @@ padding-top: 35px;
   padding: 10px 50px 0px 0px;
 }
 .Morefaq {
-  position: absolute;
-  bottom: 10px;
-  right: 250px;
+  position: relative;
 }
+
 .more-faqs {
   display: inline-block;
-  background-color: #9968EB;
+  background: #819bca;
   color: #000;
   text-align: center;
   font-size: 15px;
   font-weight: 600;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 0px;
+  margin: 10px 10px 10px 0px ;
   border-style: solid;
   border: none;
   border-width: 1px;
-  padding: 1px;
+  padding: 10px;
   box-sizing: border-box;
   border-radius: 5px;
-  width: 110px;
-  height: 25px;
 }
 }
 
@@ -2250,3 +2258,5 @@ font-size: 14px;
   font-size: 25px;
 }
 }
+
+

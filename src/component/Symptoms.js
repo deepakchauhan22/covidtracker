@@ -90,10 +90,10 @@ class Prevention extends Component{
                         <h3>Be Ready to Fight Covid-19</h3>
                         {/* <img src={pandemic} width = "20%" alt="Icons"/>  */}
                         <p> Here is a<span class="react1"><em> State wise</em></span> list of Helpline numbers</p>
-
+                        <div className = "Morefaq">
                             <a href="https://www.mohfw.gov.in/pdf/StatewiseCovidHospitalslink19062020.pdf" > 
                        <button class="vaccine-list"> State Helpline no.  &#9742; </button></a>
-                             
+                             </div>
 
                        </div>
                         

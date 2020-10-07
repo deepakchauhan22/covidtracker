@@ -64,8 +64,7 @@ function GetRequestHooks(props) {
                                                             } 
                                                             <li><a href="#"><i className="fa fa-user-md" aria-hidden="true"></i>Total Number of Tests Done in India: {props.tested} </a></li>
                                                             <li><a href="#"><i className="fa fa-user-md" aria-hidden="true"></i>Total Number of cases Today in India: {props.daily} </a></li>
-                                                            <li><a href="#"><i className="fa fa-info-circle" aria-hidden="true"></i>Guidelines on Preventive Measures to Contain Spread of COVID-19</a></li>
-                                                            </ul>
+                                                             </ul>
                                                         </div>
                                                     </div>
                                         </div> 

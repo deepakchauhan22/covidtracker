@@ -19,6 +19,7 @@ class Prevention extends Component{
   
   <div class="flex-container">
          <SideMenu />
+         
         <div class="markdown"> 
                      <div className="breadcrumbs">                
                                         <NavLink  to= "/home">
@@ -55,10 +56,11 @@ class Prevention extends Component{
                       
                         <p>Here is a <span class="react1"> <em>  List of candidate vaccines</em>  </span>developed against SARS-CoV.</p>
                  
+                        <div className = "Morefaq">
                        <a href="https://www.who.int/blueprint/priority-diseases/key-action/list-of-candidate-vaccines-developed-against-sars.pdf" > 
                        <button class="vaccine-list"> Visit www.Who.int &#9776; </button></a>
                              
-                    
+                     </div>
                      
                        </div>
                      
