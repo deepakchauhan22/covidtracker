@@ -1,6 +1,6 @@
 # Covidtrak - A Live Covid-19 Corona stats Tracker
 
-## covidtrak.in App Fetches Location wise covid-19 Stats
+## www.covidtrak.in App Fetches Location wise covid-19 Stats
 ### This Project is Using Stats API from covid19india.org
 
  **Tech Stack**
