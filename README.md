@@ -26,4 +26,4 @@
 
 Live Covid-19 Tracker.
 
-Visit - http://bit.ly/covidtrak
+Visit -https://www.covidtrak.in
