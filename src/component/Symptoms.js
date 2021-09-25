@@ -3,8 +3,7 @@ import Hero from '../assets/img/hero.png';
 import tired from '../assets/img/tired.png';
 import cough from '../assets/img/cough.svg';
 import fever from '../assets/img/fever.svg';
-import protection from '../assets/img/protection.png';
-import { GetRequest } from './GetRequest';
+
 import SideMenu from './SideMenu';
 
 import {NavLink } from 'react-router-dom';
@@ -89,9 +88,9 @@ class Prevention extends Component{
                     <div className="state-helpline"> 
                         <h3>Be Ready to Fight Covid-19</h3>
                         {/* <img src={pandemic} width = "20%" alt="Icons"/>  */}
-                        <p> Here is a<span class="react1"><em> State wise</em></span> list of Helpline numbers</p>
+                        <p> Here is a<span class="react1"><em> State wise</em></span> list of Helpline numbers.</p>
                         <div className = "Morefaq">
-                            <a href="https://www.mohfw.gov.in/pdf/StatewiseCovidHospitalslink19062020.pdf" > 
+                            <a href="https://www.mohfw.gov.in/pdf/StatewiseCovidHospitalslink19062020.pdf"  target="_blank" > 
                        <button class="vaccine-list"> State Helpline no.  &#9742; </button></a>
                              </div>
 

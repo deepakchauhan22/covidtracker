@@ -1,5 +1,4 @@
 import React  ,{ Component } from 'react';
-import covidred from '../assets/img/covid.svg';
 import {NavLink } from 'react-router-dom';
 
 class SideMenu extends Component{

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { render } from 'react-dom';
+
 import { Doughnut } from 'react-chartjs-2'
 
 
@@ -15,7 +15,7 @@ class Chart extends Component {
 
 async componentDidMount() {
   // GET request using fetch with async/await
-  const response = await fetch('https://api.covid19india.org/v4/data.json');
+  const response = await fetch('https://data.covid19india.org/v4/min/data.min.json');
   const data = await response.json();
   this.setState({ states: data    ,
       population: data.TT.meta.population,
@@ -31,7 +31,7 @@ async componentDidMount() {
  
 
   render() {
-    const { totalConfirmed,totalRecovered,totalDeath ,population} = this.state;
+    const { totalConfirmed,totalRecovered,totalDeath } = this.state;
 
     var fatrate = 0;
     var recovrate = 0;

@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
-function GetRequestHooks(props) {
+function GlobalData(props) {
     const [Globe, setGlobe] = useState([]);
-    const [City, setCity] = useState([]);
     const [showText, setShowText] = useState(false);
   
     useEffect(() => {
@@ -15,12 +14,9 @@ function GetRequestHooks(props) {
     }, []);
 
   
-    const cityName = window.cityName;
-    const userStatecode = window.userStatecode;
     
     return (
-        console.log(cityName),
-        console.log(userStatecode),
+      
 
 
     //   console.log(cityName),
@@ -80,59 +76,9 @@ function GetRequestHooks(props) {
                             </a>                     
                 </div>
             
-
-            {/* <div>                    
-                      <span>TotalConfirmed: {Globe}</span>
-            </div> */}
-                                                 {/* .filter(
-                                                (stateCode) =>
-                                                stateCode !== 'TT' &&
-                                                states[stateCode]['total'] 
-                                                //  && states[stateCode][districts]
-                                               )
-                                               
-                                               
-                                                 .map((stateCode,i) => {
-                                                   
-                                                    var confirmed = states[stateCode]['total']['confirmed'];
-                                                    var recovered = states[stateCode]['total']['recovered'];
-                                                    var migrated = states[stateCode]['total']['migrated'];
-                                                    var deceased = states[stateCode]['total']['deceased'];
-                                                    var tested = states[stateCode]['total']['tested'];
-                                                   
-                                               */}
- 
-         
-
-                   
-               
-
-
-
-           {/* {
-        Object.keys(Globe).filter(
-            (stateCode) =>
-            stateCode == 'Global'
-            //  && states[stateCode][districts]
-           ).map((stateCode, i) => {
-
-            var confirmed = Globe['Global']['TotalConfirmed'];
-
-               return(
-                <p>
-                <span>dee: {confirmed}</span>
-               
-              </p>
-               )
-        
-           })
-      }  */}
-            
-          
-           
          
         </div>
     );
 }
 
-export { GetRequestHooks };
+export { GlobalData };

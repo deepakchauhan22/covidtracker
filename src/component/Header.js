@@ -1,5 +1,4 @@
 import React  ,{ Component } from 'react';
-import covidred from '../assets/img/covid.svg';
 import {NavLink } from 'react-router-dom';
 
 class Header extends Component{
@@ -16,8 +15,8 @@ class Header extends Component{
          
         <div className="topnav" id="myTopnav">
                  
-                   <NavLink className="active" to= "/home">
-                    <span ></span> Covidtrak.
+                   <NavLink className="active" to= "/">
+                    <span ></span> Covidtracker.
                    </NavLink>
                         <NavLink  to= "/about">
                         <span className="fa fa-asterisk i"></span> About

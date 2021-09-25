@@ -113,7 +113,7 @@ i{
 }
 .intro-text span{
   font-weight: 700;
-  font-size: 20px;
+  font-size: 13px;
 }
 
 .intro-img{
@@ -858,9 +858,7 @@ code{
     -moz-box-shadow: 0px 14px 0px 0.5px rgba(153,104,235,0.77);
     box-shadow: 0px 14px 0px 0.5px rgba(153,104,235,0.77); */
 
-    box-shadow:
-    -5px -3px 5px 0 rgba(0, 0, 0, 0.25),
-    8px 8px 12px 0 rgba(255, 255, 255, 0.3);
+  
     
  }
 
@@ -871,11 +869,8 @@ code{
    text-decoration: none;
    color: #161617;
    letter-spacing: 0.00875em;
-   font-size: 20px;
-   font-weight: 900;
-   font-family: Roman-55,PingFang SC,Hiragino Sans GB,Heiti SC,STHeiti,Microsoft YaHei,WenQuanYi Micro Hei,Helvetica Neue,Helvetica,Arial,sans-serif;
- 
-  
+   font-size: 15px;
+   font-weight: 900;  
  }
 
  .footer-bar{
@@ -1238,7 +1233,7 @@ text-align: left;
   
   }
   #customers {
-    font-size: 12px;
+    font-size: 14px;
  }
 
 #customers td, #customers th {
@@ -1429,7 +1424,7 @@ padding-top: 35px;
   display: block;
 }
 #customers{
-  font-size: 8px;
+  font-size: 10px;
 }
 #customers th {
    padding-top: 5px;
@@ -1961,7 +1956,6 @@ font-size: 15px;
     padding: 15px;
 }
 
-
   .topnav a:not(:first-child) {display: none;}
   .Hero-Block .icon-bar {
   display: none;
@@ -2023,13 +2017,19 @@ font-size: 12px;
 
 }
 .cityContentBox span {
-
 font-size: 14px;
-
+}
+#customers {
+  font-size: 10px;
 }
 
 }
 @media (max-width: 450px) {
+
+  .city-details i {
+    font-size: 30px;
+    margin-right: 5px;
+}
   .prevent-img img {
     padding: 10px;
 }
@@ -2116,7 +2116,7 @@ font-size: 20px;
 
 }
 .cityover > span.a {
-font-size: 16px;
+font-size: 20px;
 }
 .cityContent button {
 
@@ -2142,7 +2142,7 @@ font-size: 14px;
  
 }
 .cityover > span.a {
-  font-size: 15px;
+  font-size: 17px;
 }
 .cityContent button {
  
@@ -2176,7 +2176,6 @@ font-size: 14px;
     padding: 15px 5px 15px 5px;
    
   }
-
   .sidenav {
     position: fixed;
     top: 190px;
@@ -2224,25 +2223,28 @@ font-size: 14px;
 }
 .city-details i {
   font-size: 17px;
+  margin-right: 4px;
  
 }
 .cityover > span.a {
   font-size: 13px;
 }
 .cityContent button {
- 
   border-radius: 25px;
   padding: 6px;
   width: 130px;
   font-size: 12px;
- 
 }
 .cityContentBox span {
- 
   font-size: 12px;
- 
 }
 }
+@media  (min-width: 350px) and (max-width: 380px){
+  #customers {
+    font-size: 9px;
+  }
+}
+
 @media (max-width: 350px){
 
 .borda {
@@ -2257,6 +2259,50 @@ font-size: 14px;
   text-align: center;
   font-size: 25px;
 }
+#customers {
+  font-size: 8px;
+}
+}
+@media (max-width: 320px){
+
+  #customers {
+    font-size: 7px;
+  }
+  }
+  
+/* 
+ .vaccine-block  .cityContent {
+    width: 500px;
+} */
+
+
+.vaccine-block{
+  padding: 20px;
+  text-align: center;
+  margin-top: 25px;
+ 
+}
+.vaccine-block h3{
+  margin: 5px; 
+}
+.vaccine-block .flexx{
+  text-align: center;
+  margin: auto;
 }
 
-
+.book-slot {
+  margin-top: 10px;
+}
+.book-slot a{
+  border: none;
+    text-decoration: none;
+    color: #000;
+    background: #a5b7d9;
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 5px 15px 5px 15px;
+    width: 130px;
+    font-size: 12px;
+    font-weight: 600;
+    outline: none;
+}

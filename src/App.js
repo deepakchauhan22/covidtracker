@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Main from './component/MainComponent'; 
-import {BrowserRouter} from 'react-router-dom';
+import {BrowserRouter, HashRouter} from 'react-router-dom';
 import './App.css';
 
 
@@ -8,11 +8,11 @@ class App extends Component {
  
 render (){
   return (
-    <BrowserRouter>
+    <HashRouter>
     <div >       
       <Main/>
     </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 }

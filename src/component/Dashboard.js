@@ -1,17 +1,15 @@
 import React from 'react';
 import covidred from '../assets/img/covid.svg';
 import covidbll from '../assets/img/coviddeath.svg';
-import Footer from '../component/Footer'; 
-import { GetRequestAsyncAwait }  from '../component/GetRequestAsyncAwait';
+import { CityStateData }  from './CityStateData';
 import covidgreen from '../assets/img/covidactive.svg';
 import covidgg from '../assets/img/covidrecover.svg';
 import 'font-awesome/css/font-awesome.min.css';
-import { Global } from './Global';
-import {GetRequestHooks} from './Global';
+import {GlobalData} from './Global';
 import protection from '../assets/img/protection.png';
 import SideMenu from './SideMenu';
 
-class GetRequest extends React.Component {
+class Dashboard extends React.Component {
     constructor(props) {
         super(props);
 
@@ -20,6 +18,8 @@ class GetRequest extends React.Component {
             totalDeath: null,
             totalRecovered: null,
             totalOther: null,
+            vaccine1:null,
+            vaccine2:null,
             city: [],
         };
     }
@@ -27,7 +27,7 @@ class GetRequest extends React.Component {
     componentDidMount() {
         // Simple GET request using fetch
      
-        fetch('https://api.covid19india.org/v4/data.json')
+        fetch('https://data.covid19india.org/v4/min/data.min.json')
             .then(response => response.json())
             .then(data => this.setState({ 
                 totalOther: data.TT.total.other,
@@ -35,6 +35,8 @@ class GetRequest extends React.Component {
                 totalDeath:  data.TT.total.deceased,
                 totalConfirmed:  data.TT.total.confirmed,
                 totalRecovered: data.TT.total.recovered,
+                vaccine1: data.TT.total.vaccinated1,
+                vaccine2:data.TT.total.vaccinated2,
                 newConfirmed: data.TT.delta.confirmed,
                 newDeath:  data.TT.delta.deceased,
                 newRecovered: data.TT.delta.recovered,
@@ -43,7 +45,7 @@ class GetRequest extends React.Component {
     }
 
     render() {
-        const { totalConfirmed,totalRecovered,totalTested ,totalDeath ,totalOther,newConfirmed,newDeath,newRecovered} = this.state;
+        const { totalConfirmed,totalRecovered,totalTested ,totalDeath ,totalOther, vaccine1, vaccine2, newConfirmed,newDeath,newRecovered} = this.state;
 
       
 
@@ -53,7 +55,7 @@ class GetRequest extends React.Component {
           num_parts[0] = num_parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
           return num_parts.join(".");
         }
-  
+       
         var confirmInt = Number(totalConfirmed);
         var confirmComma =   (thousands_separators(confirmInt));
         var active =  totalConfirmed - (totalRecovered + totalDeath + totalOther)
@@ -63,6 +65,7 @@ class GetRequest extends React.Component {
         var recoverComma =   (thousands_separators(recoverInt));
         var deathInt  =  Number(totalDeath);
         var deathComma =   (thousands_separators(deathInt));
+        const totalVaccine = vaccine1 + vaccine2;
   
         return (
            
@@ -74,7 +77,11 @@ class GetRequest extends React.Component {
                                     <p>A Location-wise Corona Cases Tracker. <br/>
                                         Please Allow Location Access To Know Your City Details.
                                     </p>
-                                    <span>India <i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                                    <span><i class="fa fa-check" aria-hidden="true"></i> {totalVaccine} Vaccine doses administered <i className="fa fa-caret-down" aria-hidden="true"></i></span>
+                                   <br/>
+                                   <div className="book-slot">
+                                 <a href="https://www.cowin.gov.in/">Book Slot</a>  
+                                   </div>
                             </div>
                                 <div className="intro-img">
                                     <div className = "Hero-Image">
@@ -85,7 +92,7 @@ class GetRequest extends React.Component {
                   </div>
           
                     <SideMenu/>
-                    <GetRequestHooks  tested={totalTested} daily = {newConfirmed}/>
+                    <GlobalData  tested={totalTested} daily = {newConfirmed}/>
                   
                  <div className="Main-Content">
                             <div className="bottom-animation">
@@ -94,7 +101,7 @@ class GetRequest extends React.Component {
                                                     <img src={covidred} width = "20%"  alt="covid"/>
                                                     <span>Total Cases</span>
                                                     <p className="Developer-box"> {confirmComma}</p>
-                                                    <p className="new-box"> <i class="fa fa-arrow-circle-up" aria-hidden="true"></i> {newConfirmed} (New Cases)</p>
+                                                    <p className="new-box"> <i className="fa fa-arrow-circle-up" aria-hidden="true"></i> {newConfirmed} (New Cases)</p>
                                                 </li>
                                                 <li id="anime6" >
                                                     <img src={covidgreen} width = "20%" alt="covid"/>
@@ -110,20 +117,20 @@ class GetRequest extends React.Component {
                                                     <img src={covidgg} width = "20%" alt="covid"/>
                                                     <span>Recovered</span>
                                                     <p className="Developer-box">{recoverComma} </p>
-                                                    <p className="new-box"> <i class="fa fa-arrow-circle-up" aria-hidden="true"></i> {newRecovered}(Recoveries)</p>
+                                                    <p className="new-box"> <i className="fa fa-arrow-circle-up" aria-hidden="true"></i> {newRecovered}(Recoveries)</p>
                                                 </li>
                                                 <li id="anime8" >
                                                     <img src={covidbll} width = "20%"  alt="covid"/>
                                                     <span>Deaths</span>
                                                     <p className="Developer-box">{deathComma}</p> 
-                                                    <p className="new-box"> <i class="fa fa-arrow-circle-up" aria-hidden="true"></i> {newDeath} (New Deaths)</p>
+                                                    <p className="new-box"> <i className="fa fa-arrow-circle-up" aria-hidden="true"></i> {newDeath} (New Deaths)</p>
                                                 </li>
                                                 
                                             </ul>
                              </div>
                 </div>
                           
-                <GetRequestAsyncAwait />            
+                <CityStateData />            
                
           </div>
             
@@ -131,4 +138,4 @@ class GetRequest extends React.Component {
     }
 }
 
-export { GetRequest }; 
+export { Dashboard }; 

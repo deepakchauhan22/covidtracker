@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Hero from '../assets/img/stay-safe.png';
+import faqpdf from '../assets/FAQ.pdf';
 import SideMenu from './SideMenu';
 import {NavLink } from 'react-router-dom';
 
@@ -67,7 +68,7 @@ class Facts extends Component{
 
                      <div className = "Morefaq">
                   
-                            <a href="" class="more-faqs" ><span>More FAQs </span></a>
+                            <a href={faqpdf} class="more-faqs"  target="_blank"><span>More FAQs </span></a>
                              {/* <a href="https://www.mohfw.gov.in/pdf/StatewiseCovidHospitalslink19062020.pdf" > 
                                       <button class="vaccine-list"> State Helpline no.  &#9742; </button></a> */}
                            
